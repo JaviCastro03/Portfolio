@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javier Castro Muriana | Backend & Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio profesional de Javier Castro Muriana. Técnico informático y Desarrollador Web Full Stack (React, PHP, Python, Java)."
+    />
+    <meta name="author" content="Javier Castro Muriana" />
+
+    <!-- Fuentes Google: Syne & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Iconos Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark-theme">
+    <!-- Luz ambiental de fondo (Glow) -->
+    <div class="bg-glow bg-glow-top"></div>
+    <div class="bg-glow bg-glow-middle"></div>
+
+    <!-- Barra de Navegación -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <!-- Logo -->
+        <a href="#inicio" class="nav-logo">
+          <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+          <span class="logo-text"
+            >javiercastro<span class="logo-dot">.</span></span
+          >
+        </a>
+
+        <!-- Enlaces del Menú -->
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#inicio" class="nav-link active">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sobre-mi" class="nav-link">Sobre Mi</a>
+            </li>
+            <li class="nav-item">
+              <a href="#servicios" class="nav-link">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a href="#trayectoria" class="nav-link">Trayectoria</a>
+            </li>
+            <li class="nav-item">
+              <a href="#habilidades" class="nav-link">Skills</a>
+            </li>
+            
+          </ul>
+
+          <div class="nav-cta-mobile">
+            <a href="#contacto" class="btn btn-primary btn-sm"
+              >Get in Touch
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Acciones Derecha -->
+        <div class="nav-actions">
+          
+
+          <!-- Botón Móvil -->
+          <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ==========================================
+             SECCIÓN HERO (ESTILO IMAGEN DE REFERENCIA)
+             ========================================== -->
+      <section class="hero" id="inicio">
+        <div class="container hero-container">
+          <!-- Columna Izquierda: Textos y Botones -->
+          <div class="hero-left">
+            <div class="hero-tagline">
+              <span class="tagline-star">✨</span>
+              <span
+                >Lógica compleja convertida en código limpio y eficiente.</span
+              >
+            </div>
+
+            <h1 class="hero-title">
+              Sistemas Web
+              <span class="highlight-text">Desarrollados</span> para
+              <span class="highlight-text">Rendimiento</span> y Escala.
+            </h1>
+
+            <p class="hero-subtitle">
+              Hola, soy <strong>Javier Castro Muriana</strong>. Especializado en
+              desarrollo web full stack (<strong
+                >React, PHP, Python, Java</strong
+              >), arquitectura de bases de datos, soporte de infraestructura y
+              soluciones con
+              <strong>Inteligencia Artificial y automatización</strong>.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#trayectoria" class="btn btn-primary">
+                <span>Ver Experiencia</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a
+                href="https://github.com/JaviCastro03"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+              >
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              
+            </div>
+
+            <!-- Fila de Tecnologías (Tech Stack Monospace) -->
+            <div class="hero-tech-stack">
+              <span>REACT</span>
+              <span class="sep">|</span>
+              <span>PHP</span>
+              <span class="sep">|</span>
+              <span>PYTHON</span>
+              <span class="sep">|</span>
+              <span>JAVA</span>
+              <span class="sep">|</span>
+              <span>JAVASCRIPT</span>
+              <span class="sep">|</span>
+              <span>TYPESCRIPT</span>
+              <span class="sep">|</span>
+              <span>DOCKER</span>
+              <span class="sep">|</span>
+              <span>MYSQL</span>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Foto de Javier con estilo de la referencia -->
+          <div class="hero-right">
+            <div class="hero-photo-wrapper">
+              <!-- Glow trasero azul/violeta -->
+              <div class="photo-ambient-glow"></div>
+
+              <!-- Imagen con recorte e integración suave -->
+              <div class="photo-frame">
+                <img
+                  src="img/javier.jpg"
+                  alt="Javier Castro Muriana - Desarrollador Web Full Stack y Técnico Informático"
+                  class="hero-photo"
+                />
+                <div class="photo-overlay-fade"></div>
+              </div>
+
+              <!-- Card Flotante de Disponibilidad -->
+              <div class="hero-floating-card">
+                <span class="status-indicator"></span>
+                <div>
+                  <span class="card-status-title">Full Stack Developer</span>
+                  <span class="card-status-desc"
+                    >Disponible para proyectos</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gran texto de fondo marca de agua característico del diseño -->
+        <div class="hero-watermark-text" aria-hidden="true">ABOUT ME</div>
+
+        <!-- Divisor técnico inferior como en la imagen -->
+        <div class="container hero-bottom-bar">
+          <div class="tech-code-badge">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="tech-metrics">
+            <div class="metric-item">
+              <span class="metric-num">01</span>
+              <span class="metric-label">Desarrollo Web Full Stack</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-num">02</span>
+              <span class="metric-label">Sistemas, Soporte & Redes</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-num">03</span>
+              <span class="metric-label">IA & Automatización</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+             SECCIÓN SOBRE MÍ (ABOUT ME)
+             ========================================== -->
+      <section class="section about-section" id="sobre-mi">
+        <div class="container">
+          <div class="section-badge-wrapper">
+            <span class="section-tag">— ABOUT ME</span>
+            <h2 class="section-title">¿Quién soy y qué me motiva?</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card-main">
+              <div class="card-inner-glow"></div>
+              <h3>Perfil Profesional</h3>
+              <p class="about-lead">
+                Técnico informático en formación continua con experiencia
+                contrastada en desarrollo web, ofimática y mantenimiento
+                integral de equipos.
+              </p>
+              <p>
+                Apasionado por la tecnología y todo lo que se puede construir a
+                través de ella. Me motiva enfrentar nuevos retos técnicos,
+                aprender herramientas de vanguardia y aportar soluciones sólidas
+                que marquen la diferencia en rendimiento y fiabilidad.
+              </p>
+              <p>
+                Responsable, creativo y con gran motivación por seguir
+                formándome. Siempre buscando mejorar y colaborar para que los
+                sistemas funcionen de la manera más óptima posible.
+              </p>
+
+              <div class="about-stats-row">
+                <div class="stat-box">
+                  <span class="stat-number">+5</span>
+                  <span class="stat-text"
+                    >Lenguajes de programación dominados</span
+                  >
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">2+</span>
+                  <span class="stat-text"
+                    >Años de formación técnica especializada</span
+                  >
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">100%</span>
+                  <span class="stat-text">Compromiso y dedicación técnica</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-card-info">
+              <div class="card-inner-glow"></div>
+              <h3><i class="fa-solid fa-address-card"></i> Datos Clave</h3>
+
+              <div class="info-rows">
+                <div class="info-row">
+                  <span class="info-label"
+                    ><i class="fa-solid fa-location-dot"></i> Ubicación</span
+                  >
+                  <span class="info-val"
+                    >Alcalá la Real, Jaén</span
+                  >
+                </div>
+                <div class="info-row">
+                  <span class="info-label"
+                    ><i class="fa-regular fa-envelope"></i> Email</span
+                  >
+                  <span class="info-val"
+                    ><a href="mailto:javiercastromuriana2006@gmail.com"
+                      >javiercastromuriana2006@gmail.com</a
+                    ></span
+                  >
+                </div>
+
+                <div class="info-row">
+                  <span class="info-label"
+                    ><i class="fa-brands fa-github"></i> GitHub</span
+                  >
+                  <span class="info-val"
+                    ><a
+                      href="https://github.com/JaviCastro03"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >github.com/JaviCastro03</a
+                    ></span
+                  >
+                </div>
+                <div class="info-row">
+                  <span class="info-label"
+                    ><i class="fa-brands fa-linkedin-in"></i> LinkedIn</span
+                  >
+                  <span class="info-val"
+                    ><a
+                      href="https://www.linkedin.com/in/javier-castro-muriana-35161033a/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >javier-castromuriana-35161033a</a
+                    ></span
+                  >
+                </div>
+                <div class="info-row">
+                  <span class="info-label"
+                    ><i class="fa-solid fa-language"></i> Idiomas</span
+                  >
+                  <span class="info-val"
+                    >Español (Nativo) · Inglés (B1 Cambridge -
+                    Profesional)</span
+                  >
+                </div>
+                <div class="info-row">
+                  <span class="info-label"
+                    ><i class="fa-solid fa-id-card"></i> Permisos</span
+                  >
+                  <span class="info-val">Carnets AM, A1 y B</span>
+                </div>
+              </div>
+
+              <div class="interests-container">
+                <span class="interests-title"
+                  ><i class="fa-solid fa-microchip"></i> Intereses
+                  principales:</span
+                >
+                <div class="interest-pills">
+                  <span class="pill">Inteligencia Artificial</span>
+                  <span class="pill">Automatización</span>
+                  <span class="pill">Hardware & Gadgets</span>
+                  <span class="pill">Hacking Ético</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+             SECCIÓN SERVICIOS (SERVICES)
+             ========================================== -->
+      <section class="section services-section" id="servicios">
+        <div class="container">
+          <div class="section-badge-wrapper text-center">
+            <span class="section-tag">— WHAT I DO</span>
+            <h2 class="section-title">Servicios & Especialidades</h2>
+            <p class="section-description">
+              Soluciones técnicas orientadas al alto rendimiento, seguridad y
+              escalabilidad.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <div class="service-box">
+              <div class="service-top">
+                <span class="service-num">01.</span>
+                <div class="service-icon">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+              </div>
+              <h3>Desarrollo Web Full Stack</h3>
+              <p>
+                Construcción de aplicaciones web completas y dinámicas. Frontend
+                moderno con React, JavaScript y TypeScript acoplado a backends
+                robustos en PHP, Python o Java con bases de datos MySQL/MariaDB.
+              </p>
+              <div class="service-tags">
+                <span>React</span>
+                <span>PHP</span>
+                <span>Python</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+
+            <div class="service-box highlighted">
+              <div class="service-top">
+                <span class="service-num">02.</span>
+                <div class="service-icon">
+                  <i class="fa-solid fa-server"></i>
+                </div>
+              </div>
+              <h3>Soporte, Sistemas & Redes</h3>
+              <p>
+                Sólida base en montaje, diagnóstico y mantenimiento preventivo
+                de hardware y software. Configuración de entornos Linux,
+                virtualización con Docker y redes corporativas locales.
+              </p>
+              <div class="service-tags">
+                <span>Linux</span>
+                <span>Docker</span>
+                <span>Mantenimiento</span>
+                <span>Redes</span>
+              </div>
+            </div>
+
+            <div class="service-box">
+              <div class="service-top">
+                <span class="service-num">03.</span>
+                <div class="service-icon">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+              </div>
+              <h3>CMS, SEO & Automatización</h3>
+              <p>
+                Gestión técnica de sitios en WordPress, posicionamiento SEO
+                avanzado optimizado tanto para Google como para buscadores de
+                Inteligencia Artificial, y scripts de automatización.
+              </p>
+              <div class="service-tags">
+                <span>WordPress</span>
+                <span>SEO IA</span>
+                <span>Automatización</span>
+                <span>Ofimática</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+             SECCIÓN TRAYECTORIA (RESUME)
+             ========================================== -->
+      <section class="section resume-section" id="trayectoria">
+        <div class="container">
+          <div class="section-badge-wrapper text-center">
+            <span class="section-tag">— RESUME</span>
+            <h2 class="section-title">Experiencia y Educación</h2>
+            <p class="section-description">
+              Mi recorrido práctico en empresas y formación técnica superior.
+            </p>
+          </div>
+
+          <!-- Tabs de cambio Experiencia / Educación -->
+          <div class="resume-tabs">
+            <button class="resume-tab-btn active" data-tab="experiencia">
+              <i class="fa-solid fa-briefcase"></i> Experiencia Laboral
+            </button>
+            <button class="resume-tab-btn" data-tab="educacion">
+              <i class="fa-solid fa-graduation-cap"></i> Educación & Cursos
+            </button>
+          </div>
+
+          <!-- Tab 1: Experiencia -->
+          <div class="resume-tab-pane active" id="pane-experiencia">
+            <div class="resume-timeline">
+              <div class="timeline-entry">
+                <div class="entry-dot"></div>
+                <div class="entry-card">
+                  <div class="entry-header">
+                    <span class="entry-date"
+                      >Febrero 2026 - Junio 2026 (5 meses)</span
+                    >
+                    <span class="entry-tag">Prácticas · Remoto</span>
+                  </div>
+                  <h3 class="entry-title">Desarrollador Web (CRM y ERP)</h3>
+                  <h4 class="entry-company">
+                    Areea - Hardware & Software developers
+                  </h4>
+                  <p class="entry-text">
+                    Desarrollo e integración de funcionalidades para sistemas de
+                    gestión empresarial CRM y ERP, implementando interfaces
+                    reactivas y componentes modernos con <strong>React</strong>.
+                  </p>
+                  <div class="entry-badges">
+                    <span>React</span>
+                    <span>CRM / ERP</span>
+                    <span>JavaScript</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-entry">
+                <div class="entry-dot"></div>
+                <div class="entry-card">
+                  <div class="entry-header">
+                    <span class="entry-date">Mayo 2025 (1 mes)</span>
+                    <span class="entry-tag">Prácticas · Alcalá la Real</span>
+                  </div>
+                  <h3 class="entry-title">
+                    Técnico Informático & Web (Etapa 2)
+                  </h3>
+                  <h4 class="entry-company">Bandesur</h4>
+                  <p class="entry-text">
+                    Uso y administración de bases de datos relacionales
+                    corporativas y soporte a la plataforma web mediante gestión
+                    avanzada de <strong>WordPress</strong>.
+                  </p>
+                  <div class="entry-badges">
+                    <span>Bases de Datos</span>
+                    <span>WordPress</span>
+                    <span>MySQL</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-entry">
+                <div class="entry-dot"></div>
+                <div class="entry-card">
+                  <div class="entry-header">
+                    <span class="entry-date"
+                      >Marzo 2024 - Junio 2024 (4 meses)</span
+                    >
+                    <span class="entry-tag">Prácticas · Alcalá la Real</span>
+                  </div>
+                  <h3 class="entry-title">
+                    Mantenimiento de Equipos & Web (Etapa 1)
+                  </h3>
+                  <h4 class="entry-company">Bandesur</h4>
+                  <p class="entry-text">
+                    Mantenimiento preventivo y correctivo de hardware
+                    informático, resolución de incidencias en puestos de trabajo
+                    y administración del sitio web corporativo con WordPress.
+                  </p>
+                  <div class="entry-badges">
+                    <span>Hardware</span>
+                    <span>Mantenimiento</span>
+                    <span>WordPress</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Educación -->
+          <div class="resume-tab-pane" id="pane-educacion">
+            <div class="resume-timeline">
+              <div class="timeline-entry">
+                <div class="entry-dot"></div>
+                <div class="entry-card">
+                  <div class="entry-header">
+                    <span class="entry-date">Agosto 2026</span>
+                    <span class="entry-tag">Máster Profesional</span>
+                  </div>
+                  <h3 class="entry-title">
+                    Máster en Desarrollo Web Full Stack
+                  </h3>
+                  <h4 class="entry-company">Conquer Blocks</h4>
+                  <p class="entry-text">
+                    Especialización en desarrollo web full stack con tecnologías
+                    y frameworks modernos, microservicios, bases de datos y
+                    arquitectura web.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-entry">
+                <div class="entry-dot"></div>
+                <div class="entry-card">
+                  <div class="entry-header">
+                    <span class="entry-date">Septiembre 2024 - Junio 2026</span>
+                    <span class="entry-tag"
+                      >Formación Profesional Grado Superior</span
+                    >
+                  </div>
+                  <h3 class="entry-title">
+                    Grado Superior en Desarrollo de Aplicaciones Web (DAW)
+                  </h3>
+                  <h4 class="entry-company">IES Alfonso XI</h4>
+                  <p class="entry-text">
+                    Desarrollo en entorno cliente y servidor (Java, PHP,
+                    JavaScript), diseño de interfaces interactivas, bases de
+                    datos relacionales y despliegue de aplicaciones web.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-entry">
+                <div class="entry-dot"></div>
+                <div class="entry-card">
+                  <div class="entry-header">
+                    <span class="entry-date">Septiembre 2022 - Junio 2024</span>
+                    <span class="entry-tag"
+                      >Formación Profesional Grado Medio</span
+                    >
+                  </div>
+                  <h3 class="entry-title">
+                    Grado Medio en Sistemas Microinformáticos y Redes (SMR)
+                  </h3>
+                  <h4 class="entry-company">IES Alfonso XI</h4>
+                  <p class="entry-text">
+                    Montaje y mantenimiento de equipos microinformáticos,
+                    instalación de sistemas operativos monousuario y en red,
+                    seguridad informática y servicios de red.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-entry">
+                <div class="entry-dot"></div>
+                <div class="entry-card">
+                  <div class="entry-header">
+                    <span class="entry-date"
+                      >Especializaciones & Certificaciones</span
+                    >
+                    <span class="entry-tag">Certificaciones</span>
+                  </div>
+                  <h3 class="entry-title">
+                    Cursos de Vanguardia & Acreditaciones
+                  </h3>
+                  <h4 class="entry-company">BIG school & Otros centros</h4>
+                  <ul class="entry-cert-list">
+                    <li>
+                      <strong>Curso de Hacking Ético:</strong> BIG school
+                      (Octubre 2026)
+                    </li>
+                    <li>
+                      <strong>Curso de SEO para IA y Google:</strong> BIG school
+                      (Mayo 2026)
+                    </li>
+                    <li><strong>Certificación Python Avanzado</strong></li>
+                    <li>
+                      <strong>Inglés B1 Cambridge:</strong> Nivel comunicativo y
+                      profesional alto
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+             SECCIÓN HABILIDADES (SKILLS)
+             ========================================== -->
+      <section class="section skills-section" id="habilidades">
+        <div class="container">
+          <div class="section-badge-wrapper text-center">
+            <span class="section-tag">— TECH & SOFT SKILLS</span>
+            <h2 class="section-title">Habilidades y Stack Tecnológico</h2>
+            <p class="section-description">
+              Herramientas técnicas con las que desarrollo soluciones sólidas.
+            </p>
+          </div>
+
+          <div class="skills-grid-wrapper">
+            <!-- Hard Skills -->
+            <div class="skills-block">
+              <h3 class="block-title">
+                <i class="fa-solid fa-code"></i> Hard Skills
+              </h3>
+              <div class="tech-pills-container">
+                <div class="tech-pill-box">
+                  <span class="pill-name"
+                    ><i class="fa-brands fa-html5"></i> HTML5</span
+                  >
+                  <span class="pill-level">Avanzado</span>
+                </div>
+                <div class="tech-pill-box">
+                  <span class="pill-name"
+                    ><i class="fa-brands fa-css3-alt"></i> CSS3</span
+                  >
+                  <span class="pill-level">Avanzado</span>
+                </div>
+                <div class="tech-pill-box">
+                  <span class="pill-name"
+                    ><i class="fa-brands fa-js"></i> JavaScript</span
+                  >
+                  <span class="pill-level">Avanzado</span>
+                </div>
+                <div class="tech-pill-box">
+                  <span class="pill-name"
+                    ><i class="fa-solid fa-code"></i> TypeScript</span
+                  >
+                  <span class="pill-level">Intermedio</span>
+                </div>
+                <div class="tech-pill-box">
+                  <span class="pill-name"
+                    ><i class="fa-brands fa-react"></i> React</span
+                  >
+                  <span class="pill-level">Intermedio/Alto</span>
+                </div>
+                <div class="tech-pill-box">
+                  <span class="pill-name"
+                    ><i class="fa-brands fa-php"></i> PHP</span
+                  >
+                  <span class="pill-level">Avanzado</span>
+                </div>
+                <div class="tech-pill-box">
+                  <span class="pill-name"
+                    ><i class="fa-brands fa-python"></i> Python</span
+                  >
+                  <span class="pill-level">Avanzado</span>
+                </div>
+                <div class="tech-pill-box">
+                  <span class="pill-name"
+                    ><i class="fa-brands fa-java"></i> Java</span
+                  >
+                  <span class="pill-level">Intermedio</span>
+                </div>
+                <div class="tech-pill-box">
+                  <span class="pill-name"
+                    ><i class="fa-brands fa-wordpress"></i> WordPress</span
+                  >
+                  <span class="pill-level">Avanzado</span>
+                </div>
+                <div class="tech-pill-box">
+                  <span class="pill-name"
+                    ><i class="fa-solid fa-database"></i> MySQL / MariaDB</span
+                  >
+                  <span class="pill-level">Avanzado</span>
+                </div>
+                <div class="tech-pill-box">
+                  <span class="pill-name"
+                    ><i class="fa-brands fa-linux"></i> Linux</span
+                  >
+                  <span class="pill-level">Avanzado</span>
+                </div>
+                <div class="tech-pill-box">
+                  <span class="pill-name"
+                    ><i class="fa-brands fa-docker"></i> Docker</span
+                  >
+                  <span class="pill-level">Intermedio</span>
+                </div>
+                <div class="tech-pill-box">
+                  <span class="pill-name"
+                    ><i class="fa-solid fa-screwdriver-wrench"></i> Montaje
+                    Hardware</span
+                  >
+                  <span class="pill-level">Avanzado</span>
+                </div>
+                <div class="tech-pill-box">
+                  <span class="pill-name"
+                    ><i class="fa-solid fa-file-excel"></i> Ofimática</span
+                  >
+                  <span class="pill-level">Avanzado</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skills-block">
+              <h3 class="block-title">
+                <i class="fa-solid fa-users"></i> Soft Skills
+              </h3>
+              <div class="soft-cards-container">
+                <div class="soft-item">
+                  <div class="soft-item-icon">
+                    <i class="fa-solid fa-user-group"></i>
+                  </div>
+                  <div>
+                    <h4>Trabajo en Equipo</h4>
+                    <p>
+                      Capacidad para colaborar con empatía, aportando soluciones
+                      constructivas.
+                    </p>
+                  </div>
+                </div>
+                <div class="soft-item">
+                  <div class="soft-item-icon">
+                    <i class="fa-solid fa-headset"></i>
+                  </div>
+                  <div>
+                    <h4>Trato con el Cliente</h4>
+                    <p>
+                      Comunicación clara, escucha activa y resolución ágil de
+                      incidencias.
+                    </p>
+                  </div>
+                </div>
+                <div class="soft-item">
+                  <div class="soft-item-icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                  </div>
+                  <div>
+                    <h4>Ganas de Aprender</h4>
+                    <p>
+                      Interés proactivo por asimilar rápidamente nuevas
+                      tecnologías y arquitecturas.
+                    </p>
+                  </div>
+                </div>
+                <div class="soft-item">
+                  <div class="soft-item-icon">
+                    <i class="fa-solid fa-shield-check"></i>
+                  </div>
+                  <div>
+                    <h4>Responsabilidad</h4>
+                    <p>
+                      Compromiso con la calidad del código, puntualidad y
+                      seriedad profesional.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+ 
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-bottom">
+        <div class="footer-left">
+          <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+          <span class="footer-copy"
+            >&copy; <span id="current-year">2026</span>
+            <strong>Javier Castro Muriana</strong>. Todos los derechos
+            reservados.</span
+          >
+        </div>
+        <div class="footer-socials">
+          <a
+            href="https://github.com/JaviCastro03"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/javier-castro-muriana-35161033a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:javiercastromuriana2006@gmail.com" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+          <a href="tel:+34636980212" aria-label="Teléfono">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botón Volver Arriba -->
+    <button class="scroll-top-btn" id="scroll-top" aria-label="Volver arriba">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
